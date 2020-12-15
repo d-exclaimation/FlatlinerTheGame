@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3759371909206334324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3759371909206334322}
+  - component: {fileID: 3759371909206334325}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3759371909206334322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3759371909206334324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3759371909206334325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3759371909206334324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6045ec4815bb24abf9030534834b0f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Jump
+    clip: {fileID: 8300000, guid: db0f632fddb3748dea9ca09a59a764b5, type: 3}
+    volume: 0.14
+    pitch: 1
+    source: {fileID: 0}
+  - name: Restart
+    clip: {fileID: 8300000, guid: 7ded8f95dcfda4bfdb0646403e24a614, type: 3}
+    volume: 0.14
+    pitch: 1
+    source: {fileID: 0}
+  - name: Firing
+    clip: {fileID: 8300000, guid: 14a35bfe85576414ca54763a0c51237a, type: 3}
+    volume: 0.14
+    pitch: 1
+    source: {fileID: 0}
+  - name: Hit
+    clip: {fileID: 8300000, guid: c3f0f684a69c2435cb3b57e9c5180efb, type: 3}
+    volume: 0.14
+    pitch: 1
+    source: {fileID: 0}
+  - name: Recharge
+    clip: {fileID: 8300000, guid: 2f0da102b57bc4e65a38cf7d5e6f8e36, type: 3}
+    volume: 0.14
+    pitch: 1
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: cb7136b19d54446fdb09e87991ef1b01, type: 3}
+    volume: 0.14
+    pitch: 1
+    source: {fileID: 0}
