@@ -1,4 +1,9 @@
-﻿using UnityEngine.SceneManagement;
+﻿//
+//  The MIT License (MIT)
+//  Copyright © 2020 d-exclaimation
+//
+
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class LevelSelect : MonoBehaviour

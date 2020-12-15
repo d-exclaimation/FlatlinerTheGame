@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿//
+//  The MIT License (MIT)
+//  Copyright © 2020 d-exclaimation
+//
+
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour

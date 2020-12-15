@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿//
+//  The MIT License (MIT)
+//  Copyright © 2020 d-exclaimation
+//
+
+using UnityEngine;
 
 public class KillPlayer : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {

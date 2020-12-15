@@ -1,4 +1,9 @@
-﻿using System;
+﻿//
+//  The MIT License (MIT)
+//  Copyright © 2020 d-exclaimation
+//
+
+using System;
 using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour

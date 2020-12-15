@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿//
+//  The MIT License (MIT)
+//  Copyright © 2020 d-exclaimation
+//
+
+using UnityEngine;
 
 [System.Serializable]
 public class Sound {
