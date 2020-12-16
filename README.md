@@ -9,9 +9,9 @@
  ### Windows
 
  Direct: "Open the exe file in the source folder"
- > Get the exe and source files from the Builds folder in the source code
- > exe file is in Builds/Windows/x86 in the souce code
- > Get the latest version from the latest release
+ > 1. Get the exe and source files from the Builds folder in the source code
+ > 2. exe file is in Builds/Windows/x86 in the souce code
+ > 3. Get the latest version from the latest release
 
  Package Installer: `Not available yet`
 
@@ -20,15 +20,15 @@
  Note: macOS doesn't allow to run App without using a dmg package
 
  Direct: "Probably does not work"
- > Get the App and source files from the Builds folder in the source code
- > App file is in Builds/macOS/ in the souce code
- > Get the latest version from the latest release
+ > 1. Get the App and source files from the Builds folder in the source code
+ > 2. App file is in Builds/macOS/ in the souce code
+ > 3. Get the latest version from the latest release
 
  Builds: "Build the game through Unity"
- > Get Unity for macOS
- > Open the folder in the Unity Application
- > Go to File/Builds Settings or File/Build and Run
- > Run or Build for Mac OSX
+ > 1. Get Unity for macOS
+ > 2. Open the folder in the Unity Application
+ > 3. Go to File/Builds Settings or File/Build and Run
+ > 4. Run or Build for Mac OSX
 
  Dmg Installer: `Not available yet`
  
