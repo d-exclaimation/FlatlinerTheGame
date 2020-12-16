@@ -10,12 +10,10 @@
 
  Direct: "Open the exe file in the source folder"
  > Get the exe and source files from the Builds folder in the source code
- 
  > exe file is in Builds/Windows/x86 in the souce code
- 
  > Get the latest version from the latest release
 
- Package Installer: "Not available yet"
+ Package Installer: `Not available yet`
 
   ### MacOSX / macOS 
 
@@ -23,19 +21,14 @@
 
  Direct: "Probably does not work"
  > Get the App and source files from the Builds folder in the source code
- 
  > App file is in Builds/macOS/ in the souce code
- 
  > Get the latest version from the latest release
 
  Builds: "Build the game through Unity"
  > Get Unity for macOS
- 
  > Open the folder in the Unity Application
- 
  > Go to File/Builds Settings or File/Build and Run
- 
  > Run or Build for Mac OSX
 
- Dmg Installer: "Not available yet"
+ Dmg Installer: `Not available yet`
  
