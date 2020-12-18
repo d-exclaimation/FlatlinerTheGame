@@ -12,6 +12,12 @@
  > 1. Get the exe and source files from the Builds folder in the source code
  > 2. exe file is in Builds/Windows/x86 in the souce code
  > 3. Get the latest version from the latest release
+ 
+ Builds: `Build the game through Unity`
+ > 1. Get Unity for Windows
+ > 2. Open the folder in the Unity Application
+ > 3. Go to File/Builds Settings or File/Build and Run
+ > 4. Run of Build for Windows
 
  Package Installer: `Not available yet`
 
