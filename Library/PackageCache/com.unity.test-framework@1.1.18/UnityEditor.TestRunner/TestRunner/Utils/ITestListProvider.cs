@@ -1,11 +1,3 @@
-using System.Collections.Generic;
-using NUnit.Framework.Interfaces;
-using UnityEngine.TestTools;
-
-namespace UnityEditor.TestTools.TestRunner
-{
-    interface ITestListProvider
-    {
-        IEnumerator<ITest> GetTestListAsync(TestPlatform platform);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3b43ebb737be575553115605e173f0cef8877eb86b6cea46cafe5450f884aeee
+size 257

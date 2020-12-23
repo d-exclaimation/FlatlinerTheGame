@@ -1,34 +1,3 @@
-namespace UnityEditor.U2D.Animation
-{
-    internal static class SkinningCopyUtility
-    {
-        private static ISkinningSerializer s_SkinningSerializer = new SkinningSerializerJSON();
-        public static ISkinningSerializer Serializer
-        {
-            get { return s_SkinningSerializer; }
-            set { s_SkinningSerializer = value; }
-        }
-
-        public static string SerializeSkinningCopyDataToString(SkinningCopyData skinningData)
-        {
-            return s_SkinningSerializer.Serialize(skinningData);
-        }
-
-        public static bool CanDeserializeSystemCopyBufferToSkinningCopyData()
-        {
-            if (!string.IsNullOrEmpty(EditorGUIUtility.systemCopyBuffer))
-                return CanDeserializeStringToSkinningCopyData(EditorGUIUtility.systemCopyBuffer);
-            return false;
-        }
-
-        public static bool CanDeserializeStringToSkinningCopyData(string data)
-        {
-            return s_SkinningSerializer.CanDeserialize(data);
-        }
-
-        public static SkinningCopyData DeserializeStringToSkinningCopyData(string data)
-        {
-            return s_SkinningSerializer.Deserialize(data);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0dee9db4743d1d21a6c1243e7e1db5345f403ef8f6458c3738cdaf748175ddf0
+size 1173

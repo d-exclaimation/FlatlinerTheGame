@@ -1,24 +1,3 @@
-using System;
-
-namespace UnityEngine.TestRunner
-{
-    [AttributeUsage(AttributeTargets.Assembly)]
-    public class TestRunCallbackAttribute : Attribute
-    {
-        private Type m_Type;
-        public TestRunCallbackAttribute(Type type)
-        {
-            var interfaceType = typeof(ITestRunCallback);
-            if (!interfaceType.IsAssignableFrom(type))
-            {
-                throw new ArgumentException(string.Format("Type provided to {0} does not implement {1}", this.GetType().Name, interfaceType.Name));
-            }
-            m_Type = type;
-        }
-
-        internal ITestRunCallback ConstructCallback()
-        {
-            return Activator.CreateInstance(m_Type) as ITestRunCallback;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c07a5e45a657623ceab90b958b70d31ec51e266a5a1fa856135fecb4e6df47e4
+size 730

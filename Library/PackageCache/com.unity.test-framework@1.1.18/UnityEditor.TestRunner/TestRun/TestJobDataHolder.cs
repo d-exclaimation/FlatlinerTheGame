@@ -1,28 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace UnityEditor.TestTools.TestRunner.TestRun
-{
-    internal class TestJobDataHolder : ScriptableSingleton<TestJobDataHolder>
-    {
-        [SerializeField]
-        public List<TestJobData> TestRuns = new List<TestJobData>();
-        
-        [InitializeOnLoadMethod]
-        private static void ResumeRunningJobs()
-        {
-            foreach (var testRun in instance.TestRuns.ToArray())
-            {
-                if (testRun.isRunning)
-                {
-                    var runner = new TestJobRunner();
-                    runner.RunJob(testRun);
-                }
-                else
-                {
-                    instance.TestRuns.Remove(testRun);
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9a76b2fdfb2be7dc13a9244c2e0f5fa191792418af668da0c40f5646e5de3cf
+size 780

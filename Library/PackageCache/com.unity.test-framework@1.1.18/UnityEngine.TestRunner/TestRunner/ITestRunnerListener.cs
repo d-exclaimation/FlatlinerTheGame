@@ -1,26 +1,3 @@
-using System;
-using NUnit.Framework.Interfaces;
-using UnityEngine.Events;
-
-namespace UnityEngine.TestTools.TestRunner
-{
-    internal interface ITestRunnerListener
-    {
-        void RunStarted(ITest testsToRun);
-        void RunFinished(ITestResult testResults);
-        void TestStarted(ITest test);
-        void TestFinished(ITestResult result);
-    }
-
-    [Serializable]
-    internal class TestFinishedEvent : UnityEvent<ITestResult> {}
-
-    [Serializable]
-    internal class TestStartedEvent : UnityEvent<ITest> {}
-
-    [Serializable]
-    internal class RunFinishedEvent : UnityEvent<ITestResult> {}
-
-    [Serializable]
-    internal class RunStartedEvent : UnityEvent<ITest> {}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c7d2c59208f6af32502df1e2b4e2fba1cacec3eddbd6f44ee6b684dc87195eb
+size 684

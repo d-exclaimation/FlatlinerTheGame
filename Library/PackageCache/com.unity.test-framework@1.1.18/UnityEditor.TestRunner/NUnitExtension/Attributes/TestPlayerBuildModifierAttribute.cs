@@ -1,25 +1,3 @@
-using System;
-
-namespace UnityEditor.TestTools
-{
-    [AttributeUsage(AttributeTargets.Assembly)]
-    public class TestPlayerBuildModifierAttribute : Attribute
-    {
-        private Type m_Type;
-        public TestPlayerBuildModifierAttribute(Type type)
-        {
-            var interfaceType = typeof(ITestPlayerBuildModifier);
-            if (!interfaceType.IsAssignableFrom(type))
-            {
-                throw new ArgumentException(string.Format("Type provided to {0} does not implement {1}", this.GetType().Name, interfaceType.Name));
-            }
-            m_Type = type;
-        }
-
-        internal ITestPlayerBuildModifier ConstructModifier()
-        {
-            return Activator.CreateInstance(m_Type) as ITestPlayerBuildModifier;
-        }
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:93392701b6e360f92e2f0918687cf2762a62ca6a229ce98a2fe81f237c9e6110
+size 770

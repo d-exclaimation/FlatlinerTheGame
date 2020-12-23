@@ -1,21 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityObject = UnityEngine.Object;
-
-namespace UnityEditor.U2D.Path
-{
-    public class ScriptableData<T> : ScriptableObject
-    {
-        [SerializeField]
-        private T m_Data;
-        public UnityObject owner { get; set; }
-        public int index { get; set; }
-
-        public T data
-        {
-            get { return m_Data; }
-            set { m_Data = value; }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:36bac24f502533625cd30ee28f38ad3158f41dd2d9646b947fb848a5627589f0
+size 462

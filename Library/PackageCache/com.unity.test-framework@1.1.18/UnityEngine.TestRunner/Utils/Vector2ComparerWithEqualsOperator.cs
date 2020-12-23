@@ -1,22 +1,3 @@
-using System.Collections.Generic;
-
-namespace UnityEngine.TestTools.Utils
-{
-    public class Vector2ComparerWithEqualsOperator : IEqualityComparer<Vector2>
-    {
-        private static readonly Vector2ComparerWithEqualsOperator m_Instance = new Vector2ComparerWithEqualsOperator();
-        public static Vector2ComparerWithEqualsOperator Instance { get { return m_Instance; } }
-
-        private Vector2ComparerWithEqualsOperator() {}
-
-        public bool Equals(Vector2 expected, Vector2 actual)
-        {
-            return expected == actual;
-        }
-
-        public int GetHashCode(Vector2 vec2)
-        {
-            return 0;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:596c30fb0b3ca63ef17e802d265ce7f3654d2d7883466dcd00c6f4a3e8a98f6c
+size 650

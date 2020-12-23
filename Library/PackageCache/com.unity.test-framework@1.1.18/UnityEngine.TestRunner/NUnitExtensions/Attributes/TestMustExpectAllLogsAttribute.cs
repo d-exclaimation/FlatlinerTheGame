@@ -1,28 +1,3 @@
-using System;
-
-namespace UnityEngine.TestTools
-{
-    /// <summary>
-    /// The presence of this attribute will cause the test runner to require that every single log is expected. By
-    /// default, the runner will only automatically fail on any error logs, so this adds warnings and infos as well.
-    /// It is the same as calling `LogAssert.NoUnexpectedReceived()` at the bottom of every affected test.
-    ///
-    /// This attribute can be applied to test assemblies (will affect every test in the assembly), fixtures (will
-    /// affect every test in the fixture), or on individual test methods. It is also automatically inherited from base
-    /// fixtures.
-    ///
-    /// The MustExpect property (on by default) lets you selectively enable or disable the higher level value. For
-    /// example when migrating an assembly to this more strict checking method, you might attach
-    /// `[assembly:TestMustExpectAllLogs]` to the assembly itself, but then whitelist failing fixtures and test methods
-    /// with `[TestMustExpectAllLogs(MustExpect=false)]` until they can be migrated. This also means new tests in that
-    /// assembly would be required to have the more strict checking. 
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Assembly | AttributeTargets.Class | AttributeTargets.Method)]
-    public class TestMustExpectAllLogsAttribute : Attribute
-    {
-        public TestMustExpectAllLogsAttribute(bool mustExpect = true)
-            => MustExpect = mustExpect;
-
-        public bool MustExpect { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:42a33cc8a6cbbd2c9a18afdec77289b64c0d0d858bbdfe6eb7e53da3a0da1080
+size 1537

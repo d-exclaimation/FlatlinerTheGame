@@ -1,29 +1,3 @@
-using NUnit.Framework;
-using NUnit.Framework.Interfaces;
-using UnityEngine.TestTools.Logging;
-
-namespace UnityEngine.TestTools.TestRunner
-{
-    internal class UnexpectedLogMessageException : ResultStateException
-    {
-        public LogMatch LogEvent;
-
-        public UnexpectedLogMessageException(LogMatch log)
-            : base(BuildMessage(log))
-        {
-            LogEvent = log;
-        }
-
-        private static string BuildMessage(LogMatch log)
-        {
-            return string.Format("Expected log did not appear: {0}", log);
-        }
-
-        public override ResultState ResultState
-        {
-            get { return ResultState.Failure; }
-        }
-
-        public override string StackTrace { get { return null; } }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dbc701d1b7f1773f68c45614775e17e3a484a5222e1cc75e41d1075a5ea57341
+size 744

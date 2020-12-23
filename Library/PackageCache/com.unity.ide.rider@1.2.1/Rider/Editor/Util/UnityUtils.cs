@@ -1,20 +1,3 @@
-using System;
-using System.Linq;
-using UnityEngine;
-
-namespace Packages.Rider.Editor.Util
-{
-  public static class UnityUtils
-  {
-    internal static readonly string UnityApplicationVersion = Application.unityVersion;
-    
-    public static Version UnityVersion
-    {
-      get
-      {
-        var ver = UnityApplicationVersion.Split(".".ToCharArray()).Take(2).Aggregate((a, b) => a + "." + b);
-        return new Version(ver);
-      }
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:198d16d4141569f59512a076f2bce42dd29e62262b6079769419cf862a0b6597
+size 446

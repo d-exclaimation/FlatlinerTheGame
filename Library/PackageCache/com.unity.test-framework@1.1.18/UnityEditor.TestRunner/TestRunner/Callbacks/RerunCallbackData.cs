@@ -1,15 +1,3 @@
-using UnityEditor.TestTools.TestRunner.Api;
-using UnityEditor.TestTools.TestRunner.GUI;
-using UnityEngine;
-
-namespace UnityEditor.TestTools.TestRunner
-{
-    internal class RerunCallbackData : ScriptableSingleton<RerunCallbackData>
-    {
-        [SerializeField]
-        internal UITestRunnerFilter[] runFilters;
-
-        [SerializeField]
-        internal TestMode testMode;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:25b297f2b48272f8872a2ed8e0b7fe5ed124631543104689310664f12318c29d
+size 382

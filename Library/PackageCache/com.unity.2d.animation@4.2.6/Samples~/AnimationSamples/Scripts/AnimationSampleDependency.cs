@@ -1,30 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Unity.U2D.Animation.Sample.Dependency
-{
-    [ExecuteInEditMode]
-    internal class AnimationSampleDependency : MonoBehaviour
-    {
-        public UnityEngine.UI.Text textField = null;
-        public GameObject gameCanvas = null;
-
-        void Update()
-        {
-#if PSDIMPORTER_ENABLED
-            if(textField != null)
-                textField.enabled = false;
-            if(gameCanvas != null)
-                gameCanvas.SetActive(true);
-#else
-            if(textField != null)
-                textField.enabled = true;
-            if(gameCanvas != null)
-                gameCanvas.SetActive(false);
-#endif
-
-        }
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:94cdb43c39e00ff09fcaaaba633123905aebb20cc836c12be0a11c978d281366
+size 724

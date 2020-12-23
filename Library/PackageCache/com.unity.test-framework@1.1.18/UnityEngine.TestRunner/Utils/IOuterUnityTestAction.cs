@@ -1,19 +1,3 @@
-using System.Collections;
-using NUnit.Framework.Interfaces;
-
-namespace UnityEngine.TestTools
-{
-    /// <summary>
-    /// When implemented by an attribute, this interface implemented to provide actions to execute before setup and after teardown of tests.
-    /// </summary>
-    public interface IOuterUnityTestAction
-    {
-        /// <summary>Executed before each test is run</summary>
-        /// <param name="test">The test that is going to be run.</param>
-        IEnumerator BeforeTest(ITest test);
-
-        /// <summary>Executed after each test is run</summary>
-        /// <param name="test">The test that has just been run.</param>
-        IEnumerator AfterTest(ITest test);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a4f32db5b6f5390e32a748bb840adde656c1f3f9930909ff7506f94254353b0
+size 690

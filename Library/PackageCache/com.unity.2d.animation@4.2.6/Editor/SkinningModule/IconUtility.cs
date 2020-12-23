@@ -1,30 +1,3 @@
-using System.IO;
-using UnityEngine;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal static class IconUtility
-    {
-        static public readonly string k_LightIconResourcePath = "SkinningModule/Icons/Light";
-        static public readonly string k_DarkIconResourcePath = "SkinningModule/Icons/Dark";
-        static public readonly string k_SelectedResourceIconPath = "SkinningModule/Icons/Selected";
-
-        public static Texture2D LoadIconResource(string name, string personalPath, string proPath)
-        {
-            string iconPath = "";
-
-            if (EditorGUIUtility.isProSkin && !string.IsNullOrEmpty(proPath))
-                iconPath = Path.Combine(proPath, "d_" + name);
-            else
-                iconPath = Path.Combine(personalPath, name);
-            if (EditorGUIUtility.pixelsPerPoint > 1.0f)
-            {
-                var icon2x = ResourceLoader.Load<Texture2D>(iconPath + "@2x.png");
-                if (icon2x != null)
-                    return icon2x;
-            }
-
-            return ResourceLoader.Load<Texture2D>(iconPath+".png");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b50a10db6dc45c59c9520b87fb178161ebaad42f983b22e021eb41a46c2b0e9b
+size 1094

@@ -1,22 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace UnityEngine.TestTools.Logging
-{
-    internal interface ILogScope : IDisposable
-    {
-        Queue<LogMatch> ExpectedLogs { get; set; }
-        List<LogEvent> AllLogs { get; }
-        List<LogEvent> FailingLogs { get; }
-        bool IgnoreFailingMessages { get; set; }
-        bool IsNUnitException { get; }
-        bool IsNUnitSuccessException { get; }
-        bool IsNUnitInconclusiveException { get; }
-        bool IsNUnitIgnoreException { get; }
-        string NUnitExceptionMessage { get; }
-        void AddLog(string message, string stacktrace, LogType type);
-        bool AnyFailingLogs();
-        void ProcessExpectedLogs();
-        void NoUnexpectedReceived();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:04437d901a4ceb62a5cb4073a23f752f7ae6b86879d2daf0b70300b6a7349fcc
+size 737

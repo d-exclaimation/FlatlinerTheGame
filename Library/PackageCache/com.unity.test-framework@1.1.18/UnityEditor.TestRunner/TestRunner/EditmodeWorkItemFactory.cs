@@ -1,14 +1,3 @@
-using NUnit.Framework.Interfaces;
-using NUnit.Framework.Internal;
-using UnityEngine.TestRunner.NUnitExtensions.Runner;
-
-namespace UnityEditor.TestTools.TestRunner
-{
-    internal class EditmodeWorkItemFactory : WorkItemFactory
-    {
-        protected override UnityWorkItem Create(TestMethod method, ITestFilter filter, ITest loadedTest)
-        {
-            return new EditorEnumeratorTestWorkItem(method, filter);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac6827d66a1e28ba53539c660578e04e2a27a5b145dc147d4454d4aea383d5c9
+size 434

@@ -1,21 +1,3 @@
-﻿//
-//  The MIT License (MIT)
-//  Copyright © 2020 d-exclaimation
-//
-
-using UnityEngine;
-
-[System.Serializable]
-public class Sound {
-    public string name;
-    public AudioClip clip;
-
-    [Range(0f, 1f)]
-    public float volume;
-
-    [Range(0.1f, 3f)]
-    public float pitch;
-
-    [HideInInspector]
-    public AudioSource source;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:309d221403bb2f0299856c55958859f5efa546622240e67667073ace9c5e1e32
+size 336

@@ -1,22 +1,3 @@
-// -----------------------------------------------------------------------
-// <copyright file="ILogItem.cs" company="">
-// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
-// </copyright>
-// -----------------------------------------------------------------------
-
-namespace UnityEngine.U2D.Animation.TriangleNet
-    .Logging
-{
-    using System;
-
-    /// <summary>
-    /// A basic log item interface.
-    /// </summary>
-    internal interface ILogItem
-    {
-        DateTime Time { get; }
-        LogLevel Level { get; }
-        string Message { get; }
-        string Info { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:719a9af4c809ef77ee3a7abd6b84eeca43a697b540f63a44291013262a0c2d43
+size 612

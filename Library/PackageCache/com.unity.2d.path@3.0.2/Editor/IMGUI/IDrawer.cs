@@ -1,15 +1,3 @@
-﻿using UnityEngine;
-
-namespace UnityEditor.U2D.Path
-{
-    public interface IDrawer
-    {
-        void DrawCreatePointPreview(Vector3 position);
-        void DrawPoint(Vector3 position);
-        void DrawPointHovered(Vector3 position);
-        void DrawPointSelected(Vector3 position);
-        void DrawLine(Vector3 p1, Vector3 p2, float width, Color color);
-        void DrawBezier(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4, float width, Color color);
-        void DrawTangent(Vector3 position, Vector3 tangent);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:12d72219f986803cf930037260b92a9f551419b3f834ee86030102b0a15aea75
+size 528

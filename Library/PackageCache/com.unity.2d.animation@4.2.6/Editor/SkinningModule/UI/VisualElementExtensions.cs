@@ -1,23 +1,3 @@
-using UnityEngine.UIElements;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal static class VisualElementExtensions
-    {
-        public static void SetHiddenFromLayout(this VisualElement element, bool isHidden)
-        {
-            if (isHidden)
-            {
-                element.SetEnabled(false);
-                element.style.display = DisplayStyle.None;
-                element.style.position = Position.Absolute;
-            }
-            else
-            {
-                element.SetEnabled(true);
-                element.style.display = DisplayStyle.Flex;
-                element.style.position = Position.Relative;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8f30b4f7ee3ea60be27b90663931ec1740c4ad426318d366135858ff39ebf2ee
+size 665

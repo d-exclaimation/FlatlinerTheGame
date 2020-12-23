@@ -1,34 +1,3 @@
-﻿/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-namespace Microsoft.Unity.VisualStudio.Editor.Messaging
-{
-	internal enum MessageType
-	{
-		None = 0,
-
-		Ping,
-		Pong,
-
-		Play,
-		Stop,
-		Pause,
-		Unpause,
-
-		Build,
-		Refresh,
-
-		Info,
-		Error,
-		Warning,
-
-		Open,
-		Opened,
-
-		Version,
-		UpdatePackage,
-
-		ProjectPath,
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e1ebfef47dcc54cc42951e7df1816a802a0ae8c53faeed7459fea553bf697795
+size 628

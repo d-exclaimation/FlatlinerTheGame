@@ -1,22 +1,3 @@
-// -----------------------------------------------------------------------
-// <copyright file="IPredicates.cs">
-// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
-// </copyright>
-// -----------------------------------------------------------------------
-
-namespace UnityEngine.U2D.Animation.TriangleNet
-{
-    using Animation.TriangleNet.Geometry;
-
-    internal interface IPredicates
-    {
-        double CounterClockwise(Point a, Point b, Point c);
-
-        double InCircle(Point a, Point b, Point c, Point p);
-
-        Point FindCircumcenter(Point org, Point dest, Point apex, ref double xi, ref double eta);
-
-        Point FindCircumcenter(Point org, Point dest, Point apex, ref double xi, ref double eta,
-            double offconstant);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:26ed8efdfcb07da927a465397984e027540ec2c6b9d2cef77721ef87ce76dd86
+size 773

@@ -1,14 +1,3 @@
-namespace Packages.Rider.Editor {
-  class GUIDProvider : IGUIDGenerator
-  {
-    public string ProjectGuid(string projectName, string assemblyName)
-    {
-      return SolutionGuidGenerator.GuidForProject(projectName + assemblyName);
-    }
-
-    public string SolutionGuid(string projectName, string extension)
-    {
-      return SolutionGuidGenerator.GuidForSolution(projectName, extension); // GetExtensionOfSourceFiles(assembly.sourceFiles)
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c8ef3cdfa35dec1a20ce5ef3ad3fdc60ba9e20619a5b9805bede646a0382f1ea
+size 453

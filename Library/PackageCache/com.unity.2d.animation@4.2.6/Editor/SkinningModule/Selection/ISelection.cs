@@ -1,14 +1,3 @@
-namespace UnityEditor.U2D.Animation
-{
-    internal interface ISelection<T>
-    {
-        int Count { get; }
-        T activeElement { get; set; }
-        T[] elements { get; set; }
-        void Clear();
-        void BeginSelection();
-        void EndSelection(bool select);
-        void Select(T element, bool select);
-        bool Contains(T element);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ceb7bd37f5c18357b7ac3b613b96f7a34ed64d19579b358f9b49db5640edb92d
+size 361

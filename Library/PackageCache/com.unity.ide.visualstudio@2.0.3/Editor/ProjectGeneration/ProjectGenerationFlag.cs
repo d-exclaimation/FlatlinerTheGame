@@ -1,22 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Microsoft.Unity.VisualStudio.Editor
-{
-	[Flags]
-	public enum ProjectGenerationFlag
-	{
-		None = 0,
-		Embedded = 1,
-		Local = 2,
-		Registry = 4,
-		Git = 8,
-		BuiltIn = 16,
-		Unknown = 32,
-		PlayerAssemblies = 64,
-		LocalTarBall = 128,
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e9b0a4a13769e2c7c3d2d193abcf0ddcdb174a95d10eb1b5caf828fd43dc89d
+size 367

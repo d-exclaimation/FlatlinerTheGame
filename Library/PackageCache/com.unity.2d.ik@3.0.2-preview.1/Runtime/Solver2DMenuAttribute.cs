@@ -1,21 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityEngine.Experimental.U2D.IK
-{
-    [AttributeUsage(AttributeTargets.Class)]
-    public sealed class Solver2DMenuAttribute : Attribute
-    {
-        string m_MenuPath;
-
-        public string menuPath
-        {
-            get { return m_MenuPath; }
-        }
-
-        public Solver2DMenuAttribute(string _menuPath)
-        {
-            m_MenuPath = _menuPath;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:64b20178e3fa1ba1182d1622b0a8961de5eb351254d0f72660f0e0ab2a279e0e
+size 425

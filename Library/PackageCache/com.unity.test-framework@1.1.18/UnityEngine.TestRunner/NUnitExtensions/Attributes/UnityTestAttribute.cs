@@ -1,33 +1,3 @@
-using System;
-using NUnit.Framework;
-using NUnit.Framework.Internal.Commands;
-using NUnit.Framework.Interfaces;
-using NUnit.Framework.Internal;
-using NUnit.Framework.Internal.Builders;
-using UnityEngine.TestRunner.NUnitExtensions.Runner;
-
-namespace UnityEngine.TestTools
-{
-    [AttributeUsage(AttributeTargets.Method)]
-    public class UnityTestAttribute : CombiningStrategyAttribute, ISimpleTestBuilder, IImplyFixture
-    {
-        public UnityTestAttribute() : base(new UnityCombinatorialStrategy(), new ParameterDataSourceProvider()) {}
-
-        private readonly NUnitTestCaseBuilder _builder = new NUnitTestCaseBuilder();
-
-        TestMethod ISimpleTestBuilder.BuildFrom(IMethodInfo method, Test suite)
-        {
-            TestCaseParameters parms = new TestCaseParameters
-            {
-                ExpectedResult = new object(),
-                HasExpectedResult = true
-            };
-
-            var t = _builder.BuildTestMethod(method, suite, parms);
-
-            if (t.parms != null)
-                t.parms.HasExpectedResult = false;
-            return t;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d82673ab2c6019bf81842cb3c6fb83f2beca6731f6c0149f87ca32d018eccea
+size 1090

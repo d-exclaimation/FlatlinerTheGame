@@ -1,29 +1,3 @@
-using System;
-using UnityEditor.TestRunner.TestLaunchers;
-using UnityEditor.TestTools.TestRunner.Api;
-using UnityEngine;
-
-namespace UnityEditor.TestTools.TestRunner.CommandLineTest
-{
-    [Serializable]
-    internal class LogSavingCallbacks : ScriptableObject, ICallbacks
-    {
-        public void RunStarted(ITestAdaptor testsToRun)
-        {
-            RemotePlayerLogController.instance.StartLogWriters();
-        }
-
-        public virtual void RunFinished(ITestResultAdaptor testResults)
-        {
-            RemotePlayerLogController.instance.StopLogWriters();
-        }
-
-        public void TestStarted(ITestAdaptor test)
-        {
-        }
-
-        public void TestFinished(ITestResultAdaptor result)
-        {
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ebf0812ded0981ef17b8388cf8756579b7074848e2bce3523d4c8c4c40788e1e
+size 738

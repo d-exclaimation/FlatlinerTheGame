@@ -1,13 +1,3 @@
-﻿using UnityEngine;
-using UnityEditor;
-
-namespace UnityEditor.U2D.Path
-{
-    public class PointRectSelector : RectSelector<Vector3>
-    {
-        protected override bool Select(Vector3 element)
-        {
-            return guiRect.Contains(HandleUtility.WorldToGUIPoint(element), true);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:951b81647927ba83c573e3a7851439a2250eb63876850485295b8e223bcc6ee4
+size 307

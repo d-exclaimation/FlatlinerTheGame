@@ -1,27 +1,3 @@
-using System;
-using System.Collections.Generic;
-using JetBrains.Annotations;
-using UnityEditor;
-
-namespace Packages.Rider.Editor.UnitTesting
-{
-  public class CallbackData : ScriptableSingleton<CallbackData>
-  {
-    public bool isRider;
-
-    [UsedImplicitly] public static event EventHandler Changed = (sender, args) => { }; 
-
-    internal void RaiseChangedEvent()
-    {
-      Changed(null, EventArgs.Empty);
-    }
-
-    public List<TestEvent> events = new List<TestEvent>();
-
-    [UsedImplicitly]
-    public void Clear()
-    {
-      events.Clear();
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:116d180f65cf729b9ed8301b734474b3bf69dff6caf18892ddec38c0fba1dbdd
+size 559

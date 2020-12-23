@@ -1,20 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework.Interfaces;
-using NUnit.Framework.Internal.Builders;
-
-namespace UnityEngine.TestTools
-{
-    internal class UnityCombinatorialStrategy : CombinatorialStrategy, ICombiningStrategy
-    {
-        public new IEnumerable<ITestCaseData> GetTestCases(IEnumerable[] sources)
-        {
-            var testCases = base.GetTestCases(sources);
-            foreach (var testCase in testCases)
-            {
-                testCase.GetType().GetProperty("ExpectedResult").SetValue(testCase, new object(), null);
-            }
-            return testCases;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7920756be13d0d244414226d2d4294dd701f894c992bb597240dd15670c22d2a
+size 643

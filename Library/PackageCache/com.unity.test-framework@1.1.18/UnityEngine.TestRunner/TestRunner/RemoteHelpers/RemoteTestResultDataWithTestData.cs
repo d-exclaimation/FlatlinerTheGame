@@ -1,15 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using NUnit.Framework.Interfaces;
-using UnityEngine.TestRunner.NUnitExtensions.Runner;
-
-namespace UnityEngine.TestRunner.TestLaunchers
-{
-    [Serializable]
-    internal class RemoteTestResultDataWithTestData
-    {
-        public RemoteTestResultData[] results;
-        public RemoteTestData[] tests;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d5d48a97cbe44a4c6cb5ade00d66df33ad039fbf2fcf98a76f7991d7bc6539e2
+size 375

@@ -1,31 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal class SkinningSerializerJSON : ISkinningSerializer
-    {
-        public bool CanDeserialize(string data)
-        {
-            bool result = true;
-            try
-            {
-                JsonUtility.FromJson<SkinningCopyData>(data);
-            }
-            catch
-            {
-                result = false;
-            }
-            return result;
-        }
-
-        public SkinningCopyData Deserialize(string data)
-        {
-            return JsonUtility.FromJson<SkinningCopyData>(data);
-        }
-
-        public string Serialize(SkinningCopyData skinningData)
-        {
-            return JsonUtility.ToJson(skinningData);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a90b1659360e75dbee102a6594316c94342bbe0f507e08a499f4a4d578e9940
+size 727

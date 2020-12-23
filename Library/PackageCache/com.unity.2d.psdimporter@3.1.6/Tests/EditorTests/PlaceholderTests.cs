@@ -1,14 +1,3 @@
-using NUnit.Framework;
-
-namespace UnityEditor.Experimental.U2D.PSDImporter.Tests
-{
-    internal class Placeholder
-    {
-        [Test]
-        public void PlaceHolderTest()
-        {
-            // Use the Assert class to test conditions.
-            Assert.Pass("This is a placeholder to ensure we have at least one test.");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2adb2cc5f78580e7ec94504a8091c7e43301836c9dc92e1c7acdd468e453feab
+size 344
