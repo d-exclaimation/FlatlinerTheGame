@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43b109860e0e8309a6ea9a4af2cfa03506939eed2697abd9b39240adee453933
-size 397
+﻿//
+//  The MIT License (MIT)
+//  Copyright © 2020 d-exclaimation
+//
+
+using UnityEngine.SceneManagement;
+using UnityEngine;
+
+public class LevelSelect : MonoBehaviour
+{
+    // Play the selected level
+    public void selectLevel(int index) {
+        SceneManager.LoadScene(index);
+    }
+    
+    // Go Back to the Main Menu
+    public void mainMenu() {
+        SceneManager.LoadScene(0);
+    }
+}

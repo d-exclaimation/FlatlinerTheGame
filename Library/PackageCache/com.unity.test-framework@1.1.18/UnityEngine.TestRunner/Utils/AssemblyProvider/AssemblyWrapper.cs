@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22a91740e348b014f5bfe5fb27aa92f5b28aecae79374db7f5a29d135ea88848
-size 683
+using System;
+using System.Reflection;
+
+namespace UnityEngine.TestTools.Utils
+{
+    internal class AssemblyWrapper : IAssemblyWrapper
+    {
+        public AssemblyWrapper(Assembly assembly)
+        {
+            Assembly = assembly;
+        }
+
+        public Assembly Assembly { get; }
+
+        public virtual string Location
+        {
+            get
+            {
+                //Some platforms dont support this
+                throw new NotImplementedException();
+            }
+        }
+
+        public virtual AssemblyName[] GetReferencedAssemblies()
+        {
+            //Some platforms dont support this
+            throw new NotImplementedException();
+        }
+    }
+}

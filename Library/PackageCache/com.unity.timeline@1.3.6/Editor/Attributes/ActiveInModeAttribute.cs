@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:242051b0d0a0a9c68bf5ac1de601395359fc2b4a6f1035a1837389a390591ed4
-size 329
+using System;
+
+namespace UnityEditor.Timeline
+{
+    [AttributeUsage(AttributeTargets.Class)]
+    class ActiveInModeAttribute : Attribute
+    {
+        public TimelineModes modes { get; private set; }
+        public ActiveInModeAttribute(TimelineModes timelineModes)
+        {
+            modes = timelineModes;
+        }
+    }
+}

@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6aaa22208f698f7761de0bc8827a1fe2df33d61148698f954ad1696fc25a792c
-size 1346
+using System;
+using System.IO;
+using UnityEditor.TestTools.TestRunner.Api;
+using UnityEditor.Utils;
+using UnityEngine;
+
+namespace UnityEditor.TestTools.TestRunner.CommandLineTest
+{
+    [Serializable]
+    internal class ResultsSavingCallbacks : ScriptableObject, ICallbacks
+    {
+        [SerializeField]
+        public string m_ResultFilePath;
+
+        public ResultsSavingCallbacks()
+        {
+            this.m_ResultFilePath = GetDefaultResultFilePath();
+        }
+
+        public void RunStarted(ITestAdaptor testsToRun)
+        {
+        }
+
+        public virtual void RunFinished(ITestResultAdaptor testResults)
+        {
+            if (string.IsNullOrEmpty(m_ResultFilePath))
+            {
+                m_ResultFilePath = GetDefaultResultFilePath();
+            }
+
+            var resultWriter = new ResultsWriter();
+            resultWriter.WriteResultToFile(testResults, m_ResultFilePath);
+        }
+
+        public void TestStarted(ITestAdaptor test)
+        {
+        }
+
+        public void TestFinished(ITestResultAdaptor result)
+        {
+        }
+
+        private static string GetDefaultResultFilePath()
+        {
+            var fileName = "TestResults-" + DateTime.Now.Ticks + ".xml";
+            var projectPath = Directory.GetCurrentDirectory();
+            return Paths.Combine(projectPath, fileName);
+        }
+    }
+}

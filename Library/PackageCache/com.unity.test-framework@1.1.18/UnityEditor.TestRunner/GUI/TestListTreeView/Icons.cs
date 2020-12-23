@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4cfe85061747fc32a9a552ac483e92f4bb39d0de3cedeb37e1040829b2d624d
-size 1045
+using UnityEngine;
+
+namespace UnityEditor.TestTools.TestRunner.GUI
+{
+    internal static class Icons
+    {
+        public static readonly Texture2D s_FailImg;
+        public static readonly Texture2D s_IgnoreImg;
+        public static readonly Texture2D s_SuccessImg;
+        public static readonly Texture2D s_UnknownImg;
+        public static readonly Texture2D s_InconclusiveImg;
+        public static readonly Texture2D s_StopwatchImg;
+
+        static Icons()
+        {
+            s_FailImg = EditorGUIUtility.IconContent("TestFailed").image as Texture2D;
+            s_IgnoreImg = EditorGUIUtility.IconContent("TestIgnored").image as Texture2D;
+            s_SuccessImg = EditorGUIUtility.IconContent("TestPassed").image as Texture2D;
+            s_UnknownImg = EditorGUIUtility.IconContent("TestNormal").image as Texture2D;
+            s_InconclusiveImg = EditorGUIUtility.IconContent("TestInconclusive").image as Texture2D;
+            s_StopwatchImg = EditorGUIUtility.IconContent("TestStopwatch").image as Texture2D;
+        }
+    }
+}

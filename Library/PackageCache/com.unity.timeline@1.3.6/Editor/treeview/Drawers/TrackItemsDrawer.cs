@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc92c1b1e5129f892d35a96ad5cd5a9f1e8e6847d66f30ecff3f7e50297af4a8
-size 1000
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    struct TrackItemsDrawer
+    {
+        List<ItemsLayer> m_Layers;
+        ClipsLayer m_ClipsLayer;
+
+        public IEnumerable<TimelineClipGUI> clips
+        {
+            get { return m_ClipsLayer.items.Cast<TimelineClipGUI>(); }
+        }
+
+        public TrackItemsDrawer(IRowGUI parent)
+        {
+            m_Layers = null;
+            m_ClipsLayer = null;
+            BuildGUICache(parent);
+        }
+
+        void BuildGUICache(IRowGUI parent)
+        {
+            m_ClipsLayer = new ClipsLayer(Layer.Clips, parent);
+            m_Layers = new List<ItemsLayer>
+            {
+                m_ClipsLayer,
+                new MarkersLayer(Layer.Markers, parent)
+            };
+        }
+
+        public void Draw(Rect rect, WindowState state)
+        {
+            foreach (var layer in m_Layers)
+            {
+                layer.Draw(rect, state);
+            }
+        }
+    }
+}

@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ae83f638f07b7dee67d8231bcf006642c943e6ef82aab07a7f9d115e615616d
-size 1049
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    /// <summary>
+    /// Used to indicate path and priority of classes that are auto added to the menu
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class)]
+    internal class MenuEntryAttribute : Attribute
+    {
+        public readonly int priority;
+        public readonly string name;
+        public readonly string subMenuPath;
+
+        public MenuEntryAttribute(string path, int priority)
+        {
+            path = path ?? string.Empty;
+            path = L10n.Tr(path);
+            this.priority = priority;
+
+            int index = path.LastIndexOf('/');
+            if (index >= 0)
+            {
+                name = (index == path.Length - 1) ? string.Empty : path.Substring(index + 1);
+                subMenuPath = path.Substring(0, index + 1);
+            }
+            else
+            {
+                name = path;
+                subMenuPath = string.Empty;
+            }
+        }
+    }
+}

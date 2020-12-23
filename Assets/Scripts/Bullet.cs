@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db0f94d24aeee7bcabdda4d40901a558c885b80ef140671f71eb06f5d7cac676
-size 365
+﻿//
+//  The MIT License (MIT)
+//  Copyright © 2020 d-exclaimation
+//
+
+using UnityEngine;
+
+public class Bullet : MonoBehaviour {
+    public float bulletSpeed = 15f;
+    public Rigidbody2D rb;
+
+    private void FixedUpdate() {
+        rb.velocity = transform.right * bulletSpeed;
+    }
+
+    private void OnCollisionEnter2D() {
+        Destroy(gameObject);
+    }
+}

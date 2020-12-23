@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e053e64e8b860ddfe62da40a828d87da15bf3d65015f1743c5c99049fa42b9d
-size 650
+using System.Collections.Generic;
+
+namespace UnityEngine.TestTools.Utils
+{
+    public class Vector3ComparerWithEqualsOperator : IEqualityComparer<Vector3>
+    {
+        private static readonly Vector3ComparerWithEqualsOperator m_Instance = new Vector3ComparerWithEqualsOperator();
+        public static Vector3ComparerWithEqualsOperator Instance { get { return m_Instance; } }
+
+        private Vector3ComparerWithEqualsOperator() {}
+
+        public bool Equals(Vector3 expected, Vector3 actual)
+        {
+            return expected == actual;
+        }
+
+        public int GetHashCode(Vector3 vec3)
+        {
+            return 0;
+        }
+    }
+}

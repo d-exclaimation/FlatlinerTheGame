@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d88c80c3e47362bfd9c11538134c0ba2b8d400b54ca8109126fdeb5df4f23b2
-size 346
+namespace UnityEditor.TestTools.TestRunner.UnityTestProtocol
+{
+    // This matches the state definitions expected by the Perl code, which in turn matches the NUnit 2 values...
+    internal enum TestState
+    {
+        Inconclusive = 0,
+        Skipped = 2,
+        Ignored = 3,
+        Success = 4,
+        Failure = 5,
+        Error = 6
+    }
+}

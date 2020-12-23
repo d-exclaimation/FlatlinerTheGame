@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8c5e5d80ed4b428433017ce3b70ff3ed904815f26774f486396850550ba718c
-size 1781
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using NUnit.Framework.Interfaces;
+
+namespace UnityEngine.TestRunner.TestLaunchers
+{
+    [Serializable]
+    internal class RemoteTestResultData
+    {
+        public string testId;
+        public string name;
+        public string fullName;
+        public string resultState;
+        public TestStatus testStatus;
+        public double duration;
+        public DateTime startTime;
+        public DateTime endTime;
+        public string message;
+        public string stackTrace;
+        public int assertCount;
+        public int failCount;
+        public int passCount;
+        public int skipCount;
+        public int inconclusiveCount;
+        public bool hasChildren;
+        public string output;
+        public string xml;
+        public string[] childrenIds;
+
+        internal RemoteTestResultData(ITestResult result)
+        {
+            testId = result.Test.Id;
+            name = result.Name;
+            fullName = result.FullName;
+            resultState = result.ResultState.ToString();
+            testStatus = result.ResultState.Status;
+            duration = result.Duration;
+            startTime = result.StartTime;
+            endTime = result.EndTime;
+            message = result.Message;
+            stackTrace = result.StackTrace;
+            assertCount = result.AssertCount;
+            failCount = result.FailCount;
+            passCount = result.PassCount;
+            skipCount = result.SkipCount;
+            inconclusiveCount = result.InconclusiveCount;
+            hasChildren = result.HasChildren;
+            output = result.Output;
+            xml = result.ToXml(true).OuterXml;
+            childrenIds = result.Children.Select(child => child.Test.Id).ToArray();
+        }
+    }
+}

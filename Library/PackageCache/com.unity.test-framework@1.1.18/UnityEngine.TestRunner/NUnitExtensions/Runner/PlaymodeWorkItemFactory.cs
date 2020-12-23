@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1dfced04596754798520d6babe35726e263372b24ca2e292ca94b2bb44721b9d
-size 387
+using NUnit.Framework.Interfaces;
+using NUnit.Framework.Internal;
+
+namespace UnityEngine.TestRunner.NUnitExtensions.Runner
+{
+    internal class PlaymodeWorkItemFactory : WorkItemFactory
+    {
+        protected override UnityWorkItem Create(TestMethod method, ITestFilter filter, ITest loadedTest)
+        {
+            return new CoroutineTestWorkItem(method, filter);
+        }
+    }
+}

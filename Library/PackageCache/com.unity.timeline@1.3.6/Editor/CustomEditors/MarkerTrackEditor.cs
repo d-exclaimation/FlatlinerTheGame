@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c934bec2b5f1abd18ead5b2f2b101c1f6e2f2d84f6f7da70c755524d6c2411bf
-size 519
+using UnityEngine;
+using UnityEngine.Timeline;
+
+namespace UnityEditor.Timeline
+{
+    [CustomTimelineEditor(typeof(MarkerTrack))]
+    class MarkerTrackEditor : TrackEditor
+    {
+        public static readonly float DefaultMarkerTrackHeight = 20;
+
+        public override TrackDrawOptions GetTrackOptions(TrackAsset track, Object binding)
+        {
+            var options = base.GetTrackOptions(track, binding);
+            options.minimumHeight = DefaultMarkerTrackHeight;
+            return options;
+        }
+    }
+}

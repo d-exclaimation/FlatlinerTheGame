@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c052b62215e2a1ec71649a77c96099780be66455376ecd760f7b37fcf40f5f2
-size 1058
+﻿using System;
+using System.Collections;
+using NUnit.Framework.Internal;
+using NUnit.Framework.Internal.Commands;
+using UnityEngine.TestRunner.NUnitExtensions.Runner;
+
+namespace UnityEngine.TestTools
+{
+    internal class ImmediateEnumerableCommand : DelegatingTestCommand
+    {
+        public ImmediateEnumerableCommand(TestCommand innerCommand)
+            : base(innerCommand) { }
+
+        public override TestResult Execute(ITestExecutionContext context)
+        {
+            if (innerCommand is IEnumerableTestMethodCommand)
+            {
+                var executeEnumerable = ((IEnumerableTestMethodCommand)innerCommand).ExecuteEnumerable(context);
+                foreach (var iterator in executeEnumerable)
+                {
+                    if (iterator != null)
+                    {
+                        throw new Exception("Only null can be yielded at this point.");
+                    }
+                }
+                return context.CurrentResult;
+            }
+
+            return innerCommand.Execute(context);
+        }
+    }
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d63aa98846f8c44d5e334121c64ffea1ecdd066a74830706577edd98129cadb3
-size 609
+using UnityEditor.Scripting.ScriptCompilation;
+
+namespace UnityEditor.TestTools.TestRunner
+{
+    internal class EditorCompilationInterfaceProxy : IEditorCompilationInterfaceProxy
+    {
+        public ScriptAssembly[] GetAllEditorScriptAssemblies()
+        {
+            return EditorCompilationInterface.Instance.GetAllEditorScriptAssemblies(EditorCompilationInterface.GetAdditionalEditorScriptCompilationOptions());
+        }
+
+        public PrecompiledAssembly[] GetAllPrecompiledAssemblies()
+        {
+            return EditorCompilationInterface.Instance.GetAllPrecompiledAssemblies();
+        }
+    }
+}

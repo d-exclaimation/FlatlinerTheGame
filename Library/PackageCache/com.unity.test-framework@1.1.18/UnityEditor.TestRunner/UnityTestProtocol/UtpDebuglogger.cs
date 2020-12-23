@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc30bfd7299962866cdd9168e52f9ccdd491c5d8c77917435426b6ce7eced1ff
-size 339
+using UnityEngine;
+
+namespace UnityEditor.TestTools.TestRunner.UnityTestProtocol
+{
+    class UtpDebugLogger : IUtpLogger
+    {
+        public void Log(Message msg)
+        {
+            var msgJson = JsonUtility.ToJson(msg);
+            Debug.LogFormat(LogType.Log, LogOption.NoStacktrace, null, "\n##utp:{0}", msgJson);
+        }
+    }
+}

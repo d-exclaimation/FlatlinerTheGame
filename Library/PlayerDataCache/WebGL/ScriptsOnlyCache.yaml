@@ -2006,4 +2006,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Credits.unity
   - Assets/Scenes/Level Select.unity
   - Assets/Scenes/Prototype.unity
-  playerPath: /Users/paladynamovincent/Downloads/Cloud/Unity Projects/FlatlinerTheGame/Builds/WebAssembly/Flatliner
+  playerPath: /Users/paladynamovincent/Downloads/Cloud/Unity Projects/Flatliner/Builds/WebAssembly/Flatliner
