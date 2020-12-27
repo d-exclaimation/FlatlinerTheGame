@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 30f;
 
     public Animator animator;
+    public GameObject explosive;
     public LayerMask groundLayers;
     public Transform feet;
     public AudioManager audioManager;
@@ -54,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool(parameters[0], false);
         }
 
-        // Check which orietation should the player be
+        // Check which orientation should the player be
         if (_mx > Compensation) {
             transform.localScale = new Vector3(1f, 1f, 1f);
             isFacingRight = true;
@@ -145,6 +146,11 @@ public class PlayerMovement : MonoBehaviour
     public bool isNormal() {
         var spinRotation = transform.rotation.z;
         return spinRotation >= -Compensation && spinRotation <= Compensation;
+    }
+
+    public void killSelf() {
+        Instantiate(explosive, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
 

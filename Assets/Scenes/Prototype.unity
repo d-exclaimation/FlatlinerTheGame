@@ -5447,6 +5447,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fe63daa4b0f54666b67fd8066fd48e6, type: 3}
+--- !u!1001 &9051442403829095607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9051442402211857255, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420028}
+    - target: {fileID: 9051442402441420663, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420028}
+    - target: {fileID: 9051442402815892396, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420028}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3047702
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6939337
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.120951
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789849, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442402983789850, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: m_Name
+      value: Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051442403204736669, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420028}
+    - target: {fileID: 9051442403657591960, guid: 51a0a484da574458ea2be445db89240d, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420028}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51a0a484da574458ea2be445db89240d, type: 3}
 --- !u!1001 &9132779252409593843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5501,6 +5578,10 @@ PrefabInstance:
     - target: {fileID: 9132779252293467800, guid: 6cac718d157b04612872a85061a5b93a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132779252293467804, guid: 6cac718d157b04612872a85061a5b93a, type: 3}
+      propertyPath: ammoCount
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9132779252293467804, guid: 6cac718d157b04612872a85061a5b93a, type: 3}
       propertyPath: audioManager

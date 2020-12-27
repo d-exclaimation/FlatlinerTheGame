@@ -48,6 +48,9 @@ public class AudioManager : MonoBehaviour
             case SoundEffect.Death:
                 playSound("Death");
                 break;
+            case SoundEffect.Explode:
+                playSound("Explode");
+                break;
             default:
                 return;
         }
@@ -60,6 +63,7 @@ public class AudioManager : MonoBehaviour
         Fire,
         HitMarker,
         Recharge,
-        Death
+        Death,
+        Explode
     }
 }

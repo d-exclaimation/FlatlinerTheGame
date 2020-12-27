@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
        
        deathUI.SetActive(true);
        _hasEnded = true;
-       FindObjectOfType<PlayerMovement>().enabled = false;
+       FindObjectOfType<PlayerMovement>().killSelf();
        FindObjectOfType<AudioManager>().playSound(AudioManager.SoundEffect.Death);
  
        // Restart the scene with delay

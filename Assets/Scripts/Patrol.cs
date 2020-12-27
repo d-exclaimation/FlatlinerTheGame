@@ -13,10 +13,9 @@ public class Patrol : MonoBehaviour {
     public LayerMask hitLayer;
     public Transform checker;
     public Transform healthBar;
-    public SpriteRenderer spriteRenderer;
-    public Sprite dead;
-    
-    
+    public GameObject explosive;
+
+
     // Private reference properties
     private bool _isFacingRight = true;
     private RaycastHit2D _hit2D;
@@ -28,7 +27,6 @@ public class Patrol : MonoBehaviour {
         
         // Kill self whenever health reaches 0 or less
         if (_health <= 0) {
-            killSelf();
             return;
         }
         
@@ -59,6 +57,10 @@ public class Patrol : MonoBehaviour {
             FindObjectOfType<AudioManager>().playSound(AudioManager.SoundEffect.HitMarker);
             _health -= 1;
         }
+
+        if (_health <= 0) {
+            killSelf();
+        }
     }
 
     private void flipPatrol() {
@@ -78,11 +80,10 @@ public class Patrol : MonoBehaviour {
     }
 
     public void killSelf() {
-        // Change the sprite to a dead one, remove health bar, change tag, and disable this script
-        spriteRenderer.sprite = dead;
+        FindObjectOfType<AudioManager>().playSound(AudioManager.SoundEffect.Explode);
+        Instantiate(explosive, patrolBody.transform.position, Quaternion.identity);
         healthBar.localScale = new Vector3(0, 0, 0);
-        gameObject.tag = "Untagged";
-        enabled = false;
+        Destroy(gameObject);
     }
     
 }

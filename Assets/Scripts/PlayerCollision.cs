@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    // NOTE:  Unity Accesible Variables
+    // NOTE:  Unity Accessible Variables
     public Rigidbody2D player;
 
     private void OnCollisionEnter2D(Collision2D other) {
@@ -26,9 +26,18 @@ public class PlayerCollision : MonoBehaviour
                 FindObjectOfType<GameManager>().completeGame();
                 break;
             case "Enemy":
-                player.velocity = new Vector2(-2 * (player.velocity.x - other.collider.attachedRigidbody.velocity.x), 10f);
+                if (isEnemyDead(other.gameObject)) return;
                 FindObjectOfType<GameManager>().endGame();
                 break;
         }
+    }
+
+    private bool isEnemyDead(GameObject other) {
+        CrazyBot bot = other.GetComponent<CrazyBot>();
+        if (bot) {
+            return bot.isDead;
+        }
+
+        return false;
     }
 }

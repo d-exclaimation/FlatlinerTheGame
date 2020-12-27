@@ -1,0 +1,1126 @@
+fileFormatVersion: 2
+guid: 840414e8031aa4528a1fd8b5c62b5efd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5549555238539383583
+    second: Projectile_2.png_0
+  - first:
+      213: -4914390049899117755
+    second: Projectile_2.png_1
+  - first:
+      213: 2086083492524980849
+    second: Projectile_2.png_2
+  - first:
+      213: 8997049079181942066
+    second: Projectile_2.png_3
+  - first:
+      213: 8483546200264274522
+    second: Projectile_2.png_4
+  - first:
+      213: 1448211986592272125
+    second: Projectile_2.png_5
+  - first:
+      213: 545234374827025228
+    second: Projectile_2.png_6
+  - first:
+      213: -4477644918833342693
+    second: Projectile_2.png_7
+  - first:
+      213: -4539373173300660284
+    second: Projectile_2.png_8
+  - first:
+      213: -4388951121924273259
+    second: Projectile_2.png_9
+  - first:
+      213: 7340591232345844824
+    second: Projectile_2.png_10
+  - first:
+      213: -5426913669151523597
+    second: Projectile_2.png_11
+  - first:
+      213: 1343350731863298436
+    second: Projectile_2.png_12
+  - first:
+      213: 8676919280456070008
+    second: Projectile_2.png_13
+  - first:
+      213: -8832374360281847663
+    second: Projectile_2.png_14
+  - first:
+      213: -4394981970220293022
+    second: Projectile_2.png_15
+  - first:
+      213: -1398543390421854965
+    second: Projectile_2.png_16
+  - first:
+      213: 8604023534190686636
+    second: Projectile_2.png_17
+  - first:
+      213: 9220825872761726428
+    second: Projectile_2.png_18
+  - first:
+      213: -3188846766803982022
+    second: Projectile_2.png_19
+  - first:
+      213: -2900258441174395527
+    second: Projectile_2.png_20
+  - first:
+      213: -8150179290828574153
+    second: Projectile_2.png_21
+  - first:
+      213: 4056300163600424885
+    second: Projectile_2.png_22
+  - first:
+      213: 1746498595100035892
+    second: Projectile_2.png_23
+  - first:
+      213: -4975224071868947303
+    second: Projectile_2.png_24
+  - first:
+      213: -7845445432395091997
+    second: Projectile_2.png_25
+  - first:
+      213: -1549006680648192588
+    second: Projectile_2.png_26
+  - first:
+      213: 4018267419448621373
+    second: Projectile_2.png_27
+  - first:
+      213: 2367165354804100542
+    second: Projectile_2.png_28
+  - first:
+      213: -3014979820916137438
+    second: Projectile_2.png_29
+  - first:
+      213: -4963629944269378498
+    second: Projectile_2.png_30
+  - first:
+      213: -3296914391176655271
+    second: Projectile_2.png_31
+  - first:
+      213: 5288706772705499760
+    second: Projectile_2.png_32
+  - first:
+      213: 4739308591049628780
+    second: Projectile_2.png_33
+  - first:
+      213: 2839421613594836681
+    second: Projectile_2.png_34
+  - first:
+      213: -6686693774714883039
+    second: Projectile_2.png_35
+  - first:
+      213: -937226667151659364
+    second: Projectile_2.png_36
+  - first:
+      213: -7011054700114043448
+    second: Projectile_2.png_37
+  - first:
+      213: 6104259824438952972
+    second: Projectile_2.png_38
+  - first:
+      213: -6993789548324720562
+    second: Projectile_2.png_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Projectile_2.png_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2537
+        width: 339
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eca371d9e40cf2b0800000000000000
+      internalID: -5549555238539383583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_1
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 2537
+        width: 328
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5438c0489449ccbb0800000000000000
+      internalID: -4914390049899117755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2537
+        width: 339
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17af1c742e143fc10800000000000000
+      internalID: 2086083492524980849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_3
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 2537
+        width: 361
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d15671870fbdc70800000000000000
+      internalID: 8997049079181942066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_4
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 2537
+        width: 350
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52fd56425c9bb570800000000000000
+      internalID: 8483546200264274522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_5
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2537
+        width: 361
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe8b4cf025191410800000000000000
+      internalID: 1448211986592272125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_6
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 2537
+        width: 350
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43a5ee66cf019700800000000000000
+      internalID: 545234374827025228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 2133
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b171b9e7ba53cd1c0800000000000000
+      internalID: -4477644918833342693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2133
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7f9764628e001c0800000000000000
+      internalID: -4539373173300660284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_9
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 2133
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bc62155305713c0800000000000000
+      internalID: -4388951121924273259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_10
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2133
+        width: 372
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c225d65d40fd560800000000000000
+      internalID: 7340591232345844824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_11
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 2133
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcf28b55cabfa4b0800000000000000
+      internalID: -5426913669151523597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_12
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2133
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481197d8f5a84a210800000000000000
+      internalID: 1343350731863298436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_13
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 2133
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87372500d1c9a6870800000000000000
+      internalID: 8676919280456070008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1728
+        width: 361
+        height: 99
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198e124b05a1d6580800000000000000
+      internalID: -8832374360281847663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1739
+        width: 350
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264e5c60f23e103c0800000000000000
+      internalID: -4394981970220293022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_16
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1728
+        width: 361
+        height: 99
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b055fea3230679ce0800000000000000
+      internalID: -1398543390421854965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_17
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1739
+        width: 361
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1798a71d1a76770800000000000000
+      internalID: 8604023534190686636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_18
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 1728
+        width: 361
+        height: 99
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5a1b9f644f6ff70800000000000000
+      internalID: 9220825872761726428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_19
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1739
+        width: 361
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39ee75c2c0feb3d0800000000000000
+      internalID: -3188846766803982022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_20
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 1739
+        width: 361
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975d8f0605630c7d0800000000000000
+      internalID: -2900258441174395527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1334
+        width: 361
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732fa62dd1fb4ee80800000000000000
+      internalID: -8150179290828574153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_22
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1334
+        width: 361
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf13c1f18fda4830800000000000000
+      internalID: 4056300163600424885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_23
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1334
+        width: 361
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b08a9083fcc3810800000000000000
+      internalID: 1746498595100035892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_24
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1334
+        width: 361
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9946746011474fab0800000000000000
+      internalID: -4975224071868947303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_25
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1334
+        width: 350
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef216932f06f1390800000000000000
+      internalID: -7845445432395091997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_26
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1334
+        width: 328
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bde14581a2d08ae0800000000000000
+      internalID: -1549006680648192588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_27
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 1334
+        width: 328
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39b2c4ade0c3c730800000000000000
+      internalID: 4018267419448621373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_28
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 930
+        width: 339
+        height: 98
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebdb5b1395cd9d020800000000000000
+      internalID: 2367165354804100542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_29
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 930
+        width: 339
+        height: 98
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222a251b3d3a826d0800000000000000
+      internalID: -3014979820916137438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_30
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 930
+        width: 328
+        height: 98
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ce4573dd4ad1bb0800000000000000
+      internalID: -4963629944269378498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_31
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 930
+        width: 339
+        height: 98
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95eca0b34d10f32d0800000000000000
+      internalID: -3296914391176655271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_32
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 930
+        width: 340
+        height: 98
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a505cf9c2456940800000000000000
+      internalID: 5288706772705499760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_33
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 930
+        width: 361
+        height: 98
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c587abd0865c140800000000000000
+      internalID: 4739308591049628780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_34
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 930
+        width: 361
+        height: 98
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cef2e5e9e6a76720800000000000000
+      internalID: 2839421613594836681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_35
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 536
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124bd4480771433a0800000000000000
+      internalID: -6686693774714883039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_36
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 536
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ee666df4d4ef2f0800000000000000
+      internalID: -937226667151659364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_37
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 536
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd9eda75eab3be90800000000000000
+      internalID: -7011054700114043448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_38
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 536
+        width: 361
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c044f54f7ffa6b450800000000000000
+      internalID: 6104259824438952972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile_2.png_39
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 536
+        width: 350
+        height: 87
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40f342e57111fe90800000000000000
+      internalID: -6993789548324720562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

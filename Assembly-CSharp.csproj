@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\Recharge.cs" />
      <Compile Include="Assets\Scripts\CrazyBot.cs" />
      <Compile Include="Assets\Scripts\KillPlayer.cs" />
+     <Compile Include="Assets\Scripts\Parallax.cs" />
      <None Include="Assets\Font\_oboto\LICENSE.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/paladynamovincent/Downloads/Cloud/Unity Projects/Flatliner/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

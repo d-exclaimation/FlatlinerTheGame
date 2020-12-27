@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191761873800497511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.25, z: 0}
+  m_LocalPosition: {x: 0.5, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 191761874025571772}
@@ -40,9 +40,10 @@ GameObject:
   m_Component:
   - component: {fileID: 191761874025571772}
   - component: {fileID: 191761874025571747}
-  - component: {fileID: 191761874025571746}
-  - component: {fileID: 191761874025571745}
   - component: {fileID: 191761874025571744}
+  - component: {fileID: 8414676986967483889}
+  - component: {fileID: 7899532342345939838}
+  - component: {fileID: 3176581277330644560}
   m_Layer: 8
   m_Name: Patrol
   m_TagString: Enemy
@@ -106,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7589064393231439435, guid: 066bb587f53044b9ba1d84b17ac79c96, type: 3}
+  m_Sprite: {fileID: 962527352606885145, guid: 62a3cf6df94284da695a720e78cc5a5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -117,8 +118,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &191761874025571746
-CircleCollider2D:
+--- !u!114 &191761874025571744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191761874025571751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554086589a99d4835aa3ff79e478751d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolSpeed: 2
+  patrolBody: {fileID: 3176581277330644560}
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  checker: {fileID: 191761873800497504}
+  healthBar: {fileID: 191761874292300132}
+  explosive: {fileID: 5021078523883675657, guid: a50ff99fcf360418e8b7852b353db5fd, type: 3}
+--- !u!95 &8414676986967483889
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191761874025571751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1f996ab65a3a41daa4796c650ef805d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &7899532342345939838
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -131,9 +171,9 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!50 &191761874025571745
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
+--- !u!50 &3176581277330644560
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -154,27 +194,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &191761874025571744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191761874025571751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 554086589a99d4835aa3ff79e478751d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolSpeed: 2
-  patrolBody: {fileID: 191761874025571745}
-  hitLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  checker: {fileID: 191761873800497504}
-  healthBar: {fileID: 191761874292300132}
-  spriteRenderer: {fileID: 191761874025571747}
-  dead: {fileID: 4721852959072870692, guid: 066bb587f53044b9ba1d84b17ac79c96, type: 3}
 --- !u!1 &191761874292300139
 GameObject:
   m_ObjectHideFlags: 0

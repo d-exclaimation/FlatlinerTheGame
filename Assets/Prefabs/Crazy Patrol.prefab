@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7705874098406592152}
   - component: {fileID: 7705874098406592154}
   - component: {fileID: 7705874098406592153}
+  - component: {fileID: 428905550935677798}
   m_Layer: 8
   m_Name: Crazy Patrol
   m_TagString: Enemy
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7128635928396732833, guid: 066bb587f53044b9ba1d84b17ac79c96, type: 3}
+  m_Sprite: {fileID: -74686721581319854, guid: 57629f2a6c90b4cb08bff46d2670ccdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,7 +106,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &7705874098406592154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,8 +122,9 @@ MonoBehaviour:
   player: {fileID: 9132779252293467800, guid: 6cac718d157b04612872a85061a5b93a, type: 3}
   chargeBody: {fileID: 7705874098406592152}
   chargeRate: 1.25
-  spriteRenderer: {fileID: 7705874098406592159}
-  dead: {fileID: 4721852959072870692, guid: 066bb587f53044b9ba1d84b17ac79c96, type: 3}
+  explosive: {fileID: 5021078523883675657, guid: a50ff99fcf360418e8b7852b353db5fd, type: 3}
+  animator: {fileID: 428905550935677798}
+  isDead: 0
 --- !u!61 &7705874098406592153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,16 +138,35 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.03210306, y: -0.06582379}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 1.25}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9357939, y: 1.1316476}
   m_EdgeRadius: 0
+--- !u!95 &428905550935677798
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7705874098406592155}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85138ff18efc1481cadbf18214693390, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

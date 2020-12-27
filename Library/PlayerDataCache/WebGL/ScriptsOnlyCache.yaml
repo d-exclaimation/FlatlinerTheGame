@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - KillPlayer
     - LevelSelect
     - MainMenu
+    - Parallax
     - Patrol
     - PlayerCollision
     - PlayerMovement
@@ -17,8 +18,10 @@ ScriptsOnlyBuild:
     - ShootingMechanic
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
+    - UnityEditor.U2D.Animation.SkinningCachePersistentState
     Unity.2D.IK.Editor.dll:
     - UnityEditor.Experimental.U2D.IK.IKEditorManager
+    - UnityEditor.Experimental.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.Experimental.U2D.IK.IKEditorManagerHelper
     Unity.2D.Sprite.Editor.dll:
@@ -45,8 +48,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -187,6 +192,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
     - Class: 212
@@ -286,6 +295,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
     - Class: 212
@@ -376,6 +389,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
@@ -468,6 +485,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
     - Class: 212
@@ -558,6 +579,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
@@ -650,6 +675,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
     - Class: 212
@@ -740,6 +769,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
@@ -838,6 +871,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
     - Class: 212
@@ -935,6 +972,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
     - Class: 212
@@ -1031,6 +1072,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
@@ -1225,6 +1270,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14586}
     - Class: 114
       Script: {instanceID: 15106}
+    - Class: 114
+      Script: {instanceID: 126382}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1232,6 +1279,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
@@ -1331,6 +1382,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
@@ -1481,7 +1536,7 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: d80d9837663763152b730c346eac9876
+      Hash: e258b2850c1b24afdd70efae62eab59a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShootingMechanic
@@ -1685,7 +1740,7 @@ ScriptsOnlyBuild:
     className: AudioManager
   - hash:
       serializedVersion: 2
-      Hash: 05d6c45678260d597ab8c23859138bc3
+      Hash: 18997a565c3a8ee63600b3c8a49fa894
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Patrol
@@ -1715,7 +1770,7 @@ ScriptsOnlyBuild:
     className: HexagonalRuleTile
   - hash:
       serializedVersion: 2
-      Hash: 9035c48a779d918c81e9ca19b8802ea8
+      Hash: b3de67ea14a5a8d8345a731f6d02c6c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -1895,7 +1950,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: d7b717adddb1018632683a2fd6255ced
+      Hash: 9a9ee6b1d17451dc11b2fa255eb2d4e8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CrazyBot
@@ -1989,6 +2044,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b78bfd20da6459f0646a679c529d67ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Parallax
   platform: 20
   scenePathNames:
   - Assets/Scenes/Menu.unity
@@ -2006,4 +2067,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Credits.unity
   - Assets/Scenes/Level Select.unity
   - Assets/Scenes/Prototype.unity
-  playerPath: /Users/paladynamovincent/Downloads/Cloud/Unity Projects/Flatliner/Builds/WebAssembly/Flatliner
+  playerPath: /Users/paladynamovincent/Downloads/Cloud/Unity Projects/Flatliner/Builds/WebGL/Flatliner

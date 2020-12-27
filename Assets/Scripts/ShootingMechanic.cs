@@ -10,7 +10,7 @@ public class ShootingMechanic : MonoBehaviour {
     // Inspector public properties
     public bool startWithAmmo;
     public SpriteRenderer battery;
-    public Transform ammoBar;
+    public SpriteRenderer ammoBar;
     public int ammoCount = 20;
     public float fireRate = 0.2f;
     public Transform gunPoint;
@@ -32,9 +32,8 @@ public class ShootingMechanic : MonoBehaviour {
 
     private void Update() {
         // Change the battery pack charge depending on the current ammo
-        ammoBar.localScale = new Vector3(ammoBar.localScale.x, (ammoCount * 0.5f / _startingAmmo), 1f);
-        battery.color = new Color(1f, 1f, 1f, ammoCount <= 0 ? 0 : 1);
-        
+        changeAmmoPercentage();
+        battery.color = new Color(1f, 1f, 1f, ammoCount <= 0 ? 0f : 1f);
         // Check if there are ammo left, if not leave early
         if (ammoCount <= 0) return;
         if ((Input.GetKey(KeyCode.F) || Input.GetMouseButton(0)) && _timeTillFire < Time.time && _movement.isNormal()) {
@@ -57,5 +56,21 @@ public class ShootingMechanic : MonoBehaviour {
 
     public void reload() {
         ammoCount = _startingAmmo;
+    }
+
+    private void changeAmmoPercentage() {
+        float percentage = ammoCount * 100 / _startingAmmo;
+        if (percentage <= 0) {
+            ammoBar.color = new Color(1f, 1f, 1f, 0f);
+        } else if (percentage <= 25f) {
+            ammoBar.color = new Color(1f, 0f, 0.22f, 1f);
+        } else if (percentage <= 50f) {
+            ammoBar.color = new Color(1f, 0.55f, 0.02f, 1f);
+        } else if (percentage <= 75f) {
+            ammoBar.color = new Color(1f, 0.89f, 0.02f, 1f);
+        }
+        else {
+            ammoBar.color = new Color(0.29f, 1f, 0.03f, 1f);
+        }
     }
 }

@@ -26,6 +26,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     private void Update() {
         // Get current position of x and y
+        if (!player) return;
         var currX = selfPosition.x;
         var currY = selfPosition.y - 3;
 
