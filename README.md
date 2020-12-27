@@ -1,6 +1,6 @@
 # FlatlinerTheGame
 
- ![alt text](https://github.com/d-exclaimation/FlatlinerTheGame/tree/main/Flatliner.png "Logo")
+ ![alt text](https://github.com/d-exclaimation/FlatlinerTheGame/blob/main/Flatliner.png "Logo")
 
  A semi-rage 2D tile-based game
 
