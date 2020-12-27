@@ -1,10 +1,20 @@
 # FlatlinerTheGame
 
+ ![alt text](https://github.com/d-exclaimation/FlatlinerTheGame/tree/main/Flatliner.png "Logo")
+
  A semi-rage 2D tile-based game
 
  A nameless flatliner character is trying to escape the unknown by traversing through the map. No information was given about who the character was and what is the facility. All that is known is that nothing is on the character side and escaping seemed like a good idea
  
  NOTE: Some files are stored in Github LFS since some binary files are too large
+
+ ### Assets
+ 
+ Clean Tilemap and enemy sprites by [0x72/Robert](https://0x72.itch.io/16x16-robot-tileset "0x72's itch.io")
+ Amazing Dino Sprite by [@ScissorMarks](https://twitter.com/ScissorMarks) / [Arks](https://arks.itch.io/dino-characters "Arks's itch.io")
+ Very cool Gun Sprite by [ma9ici4n](https://ma9ici4n.itch.io/ma9ici4nweaponpack)
+ Particles Sprites by [martdreson](https://martdreson.itch.io/particle-pack)
+ UI Sprites by [ksvr](https://kvsr.itch.io/simpleuipanelbuttons)
 
  ## Play the game
 
