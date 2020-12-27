@@ -8,13 +8,13 @@
  
  NOTE: Some files are stored in Github LFS since some binary files are too large
 
- ### Assets
+ ## Assets
  
- Clean Tilemap and enemy sprites by [0x72/Robert](https://0x72.itch.io/16x16-robot-tileset "0x72's itch.io")
- Amazing Dino Sprite by [@ScissorMarks](https://twitter.com/ScissorMarks) / [Arks](https://arks.itch.io/dino-characters "Arks's itch.io")
- Very cool Gun Sprite by [ma9ici4n](https://ma9ici4n.itch.io/ma9ici4nweaponpack)
- Particles Sprites by [martdreson](https://martdreson.itch.io/particle-pack)
- UI Sprites by [ksvr](https://kvsr.itch.io/simpleuipanelbuttons)
+ > - Clean Tilemap and enemy sprites by [0x72/Robert](https://0x72.itch.io/16x16-robot-tileset "0x72's itch.io")
+ > - Amazing Dino Sprite by [@ScissorMarks](https://twitter.com/ScissorMarks) / [Arks](https://arks.itch.io/dino-characters "Arks's itch.io")
+ > - Very cool Gun Sprite by [ma9ici4n](https://ma9ici4n.itch.io/ma9ici4nweaponpack)
+ > - Particles Sprites by [martdreson](https://martdreson.itch.io/particle-pack)
+ > - UI Sprites by [ksvr](https://kvsr.itch.io/simpleuipanelbuttons)
 
  ## Play the game
 
