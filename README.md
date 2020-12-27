@@ -15,6 +15,9 @@
  > - Very cool Gun Sprite by [ma9ici4n](https://ma9ici4n.itch.io/ma9ici4nweaponpack)
  > - Particles Sprites by [martdreson](https://martdreson.itch.io/particle-pack)
  > - UI Sprites by [ksvr](https://kvsr.itch.io/simpleuipanelbuttons)
+ 
+ ## Trailer
+ [![trailer](https://img.youtube.com/vi/paYvJbSBFfo/0.jpg)](https://www.youtube.com/watch?v=paYvJbSBFfo)
 
  ## Play the game
 
