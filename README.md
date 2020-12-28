@@ -1,12 +1,15 @@
 # FlatlinerTheGame
 
- ![alt text](https://github.com/d-exclaimation/FlatlinerTheGame/blob/main/Flatliner.png "Logo")
+ ![Logo](https://github.com/d-exclaimation/FlatlinerTheGame/blob/main/Flatliner.png "Logo")
 
  A semi-rage 2D tile-based game
 
  A nameless flatliner character is trying to escape the unknown by traversing through the map. No information was given about who the character was and what is the facility. All that is known is that nothing is on the character side and escaping seemed like a good idea
  
  NOTE: Some files are stored in Github LFS since some binary files are too large
+ 
+ ### Latest Pre-Release
+ [`v1.0-alpha`](https://github.com/d-exclaimation/FlatlinerTheGame/releases/tag/v1.0-alpha)
 
  ## Assets
  
