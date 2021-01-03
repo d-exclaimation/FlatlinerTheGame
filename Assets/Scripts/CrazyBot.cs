@@ -14,14 +14,15 @@ public class CrazyBot : MonoBehaviour {
     public float chargeRate = 1f;
     public GameObject explosive;
     public Animator animator;
+    public float range = 10f;
+    public float multiplier = .5f;
     [HideInInspector]
     public bool isDead;
 
     // Private references
-    private float _range = 10f;
     private float _timeTillMove;
     private int _superCharge;
-    private float _delay = 0.75f;
+    private float _delay = .75f;
     private string _lockOnBool = "lockedOn";
     private Vector2 currentPos => transform.position;
     private float playerX => player ? player.position.x : 0;
@@ -36,7 +37,7 @@ public class CrazyBot : MonoBehaviour {
         if (isDead || !player) return;
         animator.SetBool(_lockOnBool, isMoving());
         
-        if (distanceX >= _range || distanceY >= _range) return;
+        if (distanceX >= range || distanceY >= range) return;
         
         if (!(_timeTillMove < Time.time)) return;
         if (_superCharge >= 5) { crazyCharge();}
@@ -55,19 +56,14 @@ public class CrazyBot : MonoBehaviour {
     }
 
     private void mildCharge() {
-        chargeBody.velocity = new Vector2(0.5f * (playerX - currentPos.x), 0.5f * (playerY - currentPos.y));
-        if (playerX - currentPos.x >= 0) {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
+        chargeBody.velocity = new Vector2(multiplier * (playerX - currentPos.x), multiplier * (playerY - currentPos.y));
+        transform.localScale = playerX - currentPos.x >= 0 ? new Vector3(1f, 1f, 1f) : new Vector3(-1f, 1f, 1f);
         _timeTillMove = Time.time + chargeRate;
         _superCharge++;
     }
 
     private void crazyCharge() {
-        chargeBody.velocity = new Vector2(2f * (playerX - currentPos.x), 3f * (playerY - currentPos.y));
+        chargeBody.velocity = new Vector2(multiplier * 4 * (playerX - currentPos.x), multiplier * 4 * (playerY - currentPos.y));
         _timeTillMove = Time.time + chargeRate;
         _superCharge = 0;
     }

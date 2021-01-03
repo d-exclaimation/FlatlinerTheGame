@@ -5,8 +5,10 @@
 
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
-{
+public class MainMenu : MonoBehaviour {
+    
+    public GameObject settings;
+    
     // Start the game
     public void startGame() {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
@@ -20,5 +22,9 @@ public class MainMenu : MonoBehaviour
     // Quit App
     public void quit() {
         Application.Quit();
+    }
+
+    public void openSetting() {
+        settings.SetActive(true);
     }
 }

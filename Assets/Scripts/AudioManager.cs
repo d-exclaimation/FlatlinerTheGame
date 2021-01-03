@@ -5,26 +5,26 @@
 
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
-{
+public class AudioManager : MonoBehaviour {
     public Sound[] sounds;
+
+    public static float? defaultVolume = null;
 
     // Start is called before the first frame update
     private void Awake() {
         for(var i = 0; i < sounds.Length; i++) {
             sounds[i].source = gameObject.AddComponent<AudioSource>();
             sounds[i].source.clip = sounds[i].clip;
-            sounds[i].source.volume = sounds[i].volume;
+            sounds[i].source.volume = (defaultVolume ?? sounds[i].volume);
             sounds[i].source.pitch = sounds[i].pitch;
         }
     }
 
     private void playSound(string filename) {
         for (var i = 0; i < sounds.Length; i++) {
-            if (sounds[i].name == filename) {
-                sounds[i].source.Play();
-                return;
-            }
+            if (sounds[i].name != filename) continue;
+            sounds[i].source.Play();
+            return;
         }
     }
 

@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554086589a99d4835aa3ff79e478751d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpeed: 2
+  patrolSpeed: 100
   patrolBody: {fileID: 3176581277330644560}
   hitLayer:
     serializedVersion: 2

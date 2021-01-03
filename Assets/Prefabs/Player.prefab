@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRigidbody2D: {fileID: 9132779252293467803}
-  walkSpeed: 10
-  jumpSpeed: 20
+  walkSpeed: 500
+  jumpSpeed: 1000
   animator: {fileID: 9132779252293467806}
   explosive: {fileID: 5021078523883675657, guid: a50ff99fcf360418e8b7852b353db5fd, type: 3}
   groundLayers:

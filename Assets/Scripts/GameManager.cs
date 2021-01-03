@@ -12,14 +12,15 @@ public class GameManager : MonoBehaviour
     public float delay = 0.125f;
     public GameObject deathUI;
     public GameObject proceedUI;
-
-    bool _hasEnded;
+    public GameObject pauseUI;
     
-   // You die 
+    private bool _hasEnded;
+    private static readonly int Dead = Animator.StringToHash("dead");
+
+    // You die 
    public void endGame() {
        // Check if game has not yet ended
        if (_hasEnded) return;
-       
        deathUI.SetActive(true);
        _hasEnded = true;
        FindObjectOfType<PlayerMovement>().killSelf();
@@ -68,12 +69,23 @@ public class GameManager : MonoBehaviour
         // Reload the scene and reactive the counter
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
+   
    // Load the menu
    public void loadMenu() {
        if (_hasEnded) return;
        
        // Load the first scene
        SceneManager.LoadScene(0);
+   }
+
+   public void togglePause() {
+       if (_hasEnded || !pauseUI) return;
+       
+       pauseUI.SetActive(!pauseUI.activeSelf); 
+       Time.timeScale = pauseUI.activeSelf ? 0 : 1;
+   }
+   
+   public void quit() {
+       Application.Quit();
    }
 }

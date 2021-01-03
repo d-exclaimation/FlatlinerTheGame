@@ -13,11 +13,12 @@
 
  ## Assets
  
- > - Clean Tilemap and enemy sprites by [0x72/Robert](https://0x72.itch.io/16x16-robot-tileset "0x72's itch.io")
+ > - Clean Robotics Tilemap and Enemy sprites by [0x72/Robert](https://0x72.itch.io/16x16-robot-tileset "0x72's itch.io")
  > - Amazing Dino Sprite by [@ScissorMarks](https://twitter.com/ScissorMarks) / [Arks](https://arks.itch.io/dino-characters "Arks's itch.io")
  > - Very cool Gun Sprite by [ma9ici4n](https://ma9ici4n.itch.io/ma9ici4nweaponpack)
  > - Particles Sprites by [martdreson](https://martdreson.itch.io/particle-pack)
  > - UI Sprites by [ksvr](https://kvsr.itch.io/simpleuipanelbuttons)
+ > - Really nice dungeon tilemap by [@DavitMasia](http://twitter.com/DavitMasia) / [Kronbits](https://kronbits.itch.io/inca-game-assets)
  
  ## Trailer
  [![trailer](https://img.youtube.com/vi/paYvJbSBFfo/0.jpg)](https://www.youtube.com/watch?v=paYvJbSBFfo)

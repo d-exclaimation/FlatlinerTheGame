@@ -72,10 +72,10 @@ public class Patrol : MonoBehaviour {
     private void patrolling() {
         // Check whether it is facing right or left, and move accordingly
         if (_isFacingRight) {
-            patrolBody.velocity = new Vector2(patrolSpeed, patrolBody.velocity.y);
+            patrolBody.velocity = new Vector2(patrolSpeed * Time.deltaTime, patrolBody.velocity.y);
         }
         else {
-            patrolBody.velocity = new Vector2(-patrolSpeed, patrolBody.velocity.y);
+            patrolBody.velocity = new Vector2(-patrolSpeed * Time.deltaTime, patrolBody.velocity.y);
         }
     }
 

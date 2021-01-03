@@ -24,8 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private float _mx;
     private float _defaultGravity;
     private float _timeTillJump;
-    private Vector2 jumpMovement => new Vector2(playerRigidbody2D.velocity.x , jumpSpeed);
-    private GameManager manager => FindObjectOfType<GameManager>();
+    private Vector2 jumpMovement => new Vector2(playerRigidbody2D.velocity.x , jumpSpeed * Time.deltaTime);
 
     private const float Compensation = 0.005f;
     private const float JumpRate = 0.4f;
@@ -49,40 +48,30 @@ public class PlayerMovement : MonoBehaviour
         playerRigidbody2D.gravityScale = _defaultGravity;
 
         // if player is moving then animate running
-        if(Math.Abs(_mx) > Compensation) {
-            animator.SetBool(parameters[0], true); 
-        } else {
-            animator.SetBool(parameters[0], false);
-        }
+        animator.SetBool(parameters[0], Math.Abs(_mx) > 0);
 
         // Check which orientation should the player be
         if (_mx > Compensation) {
             transform.localScale = new Vector3(1f, 1f, 1f);
-            isFacingRight = true;
-        } else if(_mx < -Compensation) {
+            isFacingRight = true; 
+        } else if (_mx < -Compensation) {
             transform.localScale = new Vector3(-1f, 1f, 1f);
-            isFacingRight = false;
+            isFacingRight = false; 
         }
 
         // Activate jumping animation if player is not grounded
         animator.SetBool(parameters[1], isGrounded());
-        
-        // Menu
-        if (Input.GetKey(KeyCode.Escape)) {
-            manager.loadMenu();
-        }
     }
 
     private void FixedUpdate() {
 
         // Create a new velocity for the player
-        var movement = new Vector2(_mx * walkSpeed, playerRigidbody2D.velocity.y);
+        var movement = new Vector2(_mx * walkSpeed * Time.deltaTime, playerRigidbody2D.velocity.y);
 
         // Crouch safe mode
-        if(Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.LeftShift)) {
-
+        if(Input.GetKey(crouchKey)) {
             // Slowdown player
-            movement = new Vector2(_mx * walkSpeed / 2, playerRigidbody2D.velocity.y);
+            movement = new Vector2(movement.x / 2, playerRigidbody2D.velocity.y);
 
             // Immediate rotation adjustment
             if (!isGrounded()) {
@@ -108,14 +97,14 @@ public class PlayerMovement : MonoBehaviour
         playerRigidbody2D.velocity = movement;
 
         // Jumping input
-        if (Input.GetKey(KeyCode.Space) && _timeTillJump < Time.time) {
+        if (Input.GetKey(jumpKey) && _timeTillJump < Time.time) {
             jump();
             _timeTillJump = Time.time + JumpRate;
         }
+        
     }
 
     private void jump() {
-
         // Play audio
         audioManager.playSound(AudioManager.SoundEffect.Jump);
 
@@ -152,5 +141,9 @@ public class PlayerMovement : MonoBehaviour
         Instantiate(explosive, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
+    
+
+    public static KeyCode crouchKey = KeyCode.Z;
+    public static KeyCode jumpKey = KeyCode.Space;
 }
 
