@@ -9,7 +9,7 @@
  NOTE: Some files are stored in Github LFS since some binary files are too large
  
  ### Latest Pre-Release
- [`v1.0-alpha`](https://github.com/d-exclaimation/FlatlinerTheGame/releases/tag/v1.0-alpha)
+ [`v1.1-alpha`](https://github.com/d-exclaimation/FlatlinerTheGame/releases/tag/v1.1-alpha)
 
  ## Assets
  
